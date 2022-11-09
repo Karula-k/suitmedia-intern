@@ -7,7 +7,7 @@ class CheckPalindrom {
   final PalindromRepository repository;
   CheckPalindrom(this.repository);
 
-  Future<Either<Failure, ResponsePalindrom>> execute(String words) async {
+  Future<Either<Failure, ResponsePalindrom>> call(String words) async {
     return await repository.checkPalindrom(words);
   }
 }

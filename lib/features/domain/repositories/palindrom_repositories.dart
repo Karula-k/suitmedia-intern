@@ -6,6 +6,6 @@ import 'package:suitmedia_intern/features/domain/entities/user.dart';
 
 abstract class PalindromRepository {
   Future<Either<Failure, ResponsePalindrom>> checkPalindrom(String words);
-  Future<Either<Failure, ListUser>> getListUser();
+  Future<Either<Failure, ListUser>> getListUser(int page, int perPage);
   Future<Either<Failure, User>> getUser(int id);
 }

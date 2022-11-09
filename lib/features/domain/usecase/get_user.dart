@@ -7,7 +7,7 @@ class GetUser {
   final PalindromRepository repository;
   GetUser(this.repository);
 
-  Future<Either<Failure, User>> execute(int id) async {
+  Future<Either<Failure, User>> call(int id) async {
     return await repository.getUser(id);
   }
 }

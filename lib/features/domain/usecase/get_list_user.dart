@@ -7,7 +7,7 @@ class GetListUser {
   final PalindromRepository repository;
   GetListUser(this.repository);
 
-  Future<Either<Failure, ListUser>> execute() async {
-    return await repository.getListUser();
+  Future<Either<Failure, ListUser>> call(int page, int perPage) async {
+    return await repository.getListUser(page, perPage);
   }
 }
