@@ -6,12 +6,12 @@ class PalindromFunction {
     text = text.replaceAll(' ', '');
     if (text.length <= 1) {
       return const ResponsePalindromModel(
-          returnText: "Kalimat ini merupakan palindrom", hasil: true);
+          returnText: "Is Palindrom", hasil: true);
     } else if (text[0] == text[text.length - 1]) {
       return await call(text.substring(1, text.length - 1));
     } else {
       return const ResponsePalindromModel(
-          returnText: "Kalimat bukan merupakan palindrom", hasil: false);
+          returnText: "Not Palindrom", hasil: false);
     }
   }
 }

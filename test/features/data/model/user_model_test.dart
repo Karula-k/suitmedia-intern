@@ -3,7 +3,7 @@ import 'package:suitmedia_intern/features/data/models/user_detail_model.dart';
 import 'package:suitmedia_intern/features/data/models/user_model.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import '../../helper/json_reader.dart';
+import '../../../helper/json_reader.dart';
 
 void main() {
   const model = UserModel(
